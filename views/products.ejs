@@ -1,0 +1,23 @@
+<%- include("partials/header.ejs") %>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 products-container">
+  <% for(var i = 0; i < products.length; i++){ %>
+    <% var product = products[i]; %>
+    <div class="col product1">
+      <a href="/products/<%= product.name %>" class="card-link" style="text-decoration: none;">
+        <div class="card h-100">
+          <div class="card-img-top">
+            <img class="product-img" src="<%= product.imgURL %>" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title"><%= product.name %></h5>
+            <p class="card-text"><%= product.price %></p>
+          </div>
+        </div>
+      </a>
+    </div>
+  <% } %>
+</div>
+
+<%- include("partials/footer.ejs") %>
+

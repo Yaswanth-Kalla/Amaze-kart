@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head class="custom-header">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amaze-kart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-social.css">
+    <link rel="stylesheet" href="/css/styles_chat.css">
+    <link rel="icon" href="https://p7.hiclipart.com/preview/1022/32/945/shopping-cart-logo-icon-shopping-cart.jpg" type="image/x-icon">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="https://www.shutterstock.com/shutterstock/photos/1690453492/display_1500/stock-vector-shopping-cart-vector-icon-flat-design-isolated-on-white-background-1690453492.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Amaze-kart
+        </a>
+
+        <div class="dropdown categories">
+          <button class="btn btn-secondary dropdown-toggle btn-outline-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/items/Mobiles">Mobiles</a>
+            <a class="dropdown-item" href="/items/Laptops">Laptops</a>
+            <a class="dropdown-item" href="/items/Mobile-Accessories">Mobile Accessories</a>
+            <a class="dropdown-item" href="/items/Air-Conditioners">Air Conditioners</a>
+            <a class="dropdown-item" href="/items/Televisions">Televisions</a>
+            <a class="dropdown-item" href="/items/Washing-Machines">Washing Machines</a>
+          </div>
+        </div>
+        <div class="search">
+          <form class="form-inline search-form" action="/" method="post">
+            <input type="search"  id="search" name="search_bar" placeholder="Search your product">
+              <button class="btn btn-outline-dark search-btn btn-sm" type="submit">
+                  <i class="fas fa-search fa-md"></i> 
+              </button>
+          </form>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn btn-light dropdown-toggle circular-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="circular-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEX///8AAAA0NDS/v7+ZmZn09PT6+vrb29tLS0slJSXx8fGqqqrk5OSGhoYXFxfCwsLR0dGwsLCioqIICAhAQEBiYmJZWVl0dHTr6+stLS07OzvIyMhpaWnh4eFfX1+ampqQkJC2traAgIASEhLW1tZUVFQeHh7OUndTAAAErElEQVR4nO3dCXLiMBAFUMRiY8DEbGEnJiFz/yNOHCYZB0yQWkurqf9O0L+MrV20WgAAAAAAAAAAAAAAAAAAAAAAEN6gmOa7/qa96e/yaTHgLse1tPuufnrvptxFudOb9FWT/qTHXZoTyTRrzFfJpgl3efY6t/N9ZuxwF2hpcPg1X2Uh+qe6Hd8NqNS44C6TbqiRrzLkLpSq1AyoVJe7VBr9gEqV3MVSTA0CKjXlLtfck1FApbbcBZsazQwTvo24Szb0bBhQqQN3yWZ024m6CXfRJgaEgGomaUSVUxKqnLtsfaRH+EHOQzRp6+tK7sK1EQMqxV24rg454RN36Zp25IQ77tL1JDqDwmZjGZMaBTmgUjIGw2aDip9kjIXpr6FSS+7itTRPjurpcxevI2lbJGxL+NSs/lgkzCR03IzHvnWzFXf5GkYWAZWSMNK3SjiTkHD1ZpFwLOFXOlhbJFyLWMSYWySccxevxXya7T8ZE260SZqzkrt4LfQBsJQhsE1zIaGx+LAhB5TxoWm1uuSEL9yla6L/TCW095+oI8R37sK1bYkJBa0h0r41Ur4zFdpDFPQIW60FIaCQ6eB/9uYBRQwNa8wXgUUtAVdMZ01lzJTWJWbDxLmEacQLg9+3Xf4kYhbxykh/OmMt7CvzZaX7Q52L6Y9e6uk1izsR0083vGgEFLhpry6990ud77lLtDb57YOzFtfON+kNbw01NkOBrWCjZLu8XpCaLbePku9TUpT1meLnbvFQ8b4k++1T56nYP2Q4AIBwHvQz2ludjt18eehv1lmWrTf9wzJ/OZ5WkscU35L0+Hq41TNdH16PqeiY6XBxfwtYezEUeua5yA1mMXIZG0tr9rnprpq3XNBAsTehbTiZT2R8aUclfVPUWxn/pFu6JMc7W8b92RnZ5vvMGO9zTGz2CtWVkb6PE0f5KjFOUKU2G9iv9WNrOxKdqV8zL1H9VPduH+BZTI/R5RtYF83b6KKJaBbHwvCKvlHvvk0E624F/SyeDv6rXY5e81WOvAFtTuLpYl1fpO8kNcF4ew31VLqp8tEDskUM8Q5+YXkXfXVkmjF0b6j7gKmCbz61O2VIEXjk3zPZtOZGFnZynLIH2NYiZMAwLf2lgOdNbO6FsBGsF87wEp4FexX9jXjvCTQiNr1Nz6UgraLF9TP2glxg42pimybAjWcpa0Cl/C/c3L8Y2C/vp705PzNnvg9D21wn4IbnsydH7nzK9+Sbz9lfXRufAfnfworPa9z538KKx4fINaa45G+MYXMTm0veztOuuJN987UiFXKC9He+pk/j+M5UPJ3cP3Hnqjl5SRhumeK+0kdAw6PLfnnpnHIPDH/yMUyM50ta8fE15Zjmvs3DQLjHnemC+wP8sfRJv7jvm/IsVdzmfvtCXK+hj5Uo7kRXXAek/qGDP67HF3HMX9S5nlWMq72vuG7zX7kDXXl1nNDHNmc7rq9v51xSazZ2nJA7TwO3AeNrLFz3TAk3zHnn9rBCbP3uitu+d+h9ejrc7lqIr0vjulNjc4O1L26XoI7ccRq4XSl9/GcY43vo9ktTZO3YZH5m9gEAAAAAAAAAAAAAAAAAAAAAHtpf161MvXIqm+gAAAAASUVORK5CYII=">
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="/login" class="login-button">
+              <button type="submit" class="btn">Login</button>
+            </a></li>
+            <li><a href="/register" class="register-button">
+              <button type="submit" class="btn">Register</button>
+            </a></li>
+            <li><a href="/logout" class="logout-button">
+              <button type="submit"class="btn">logout</button>
+            </a></li>
+          </ul>
+        </div>
+
+        <a href="/cart" style="color: black;">
+          <img src="https://cdn-icons-png.flaticon.com/512/1413/1413908.png" <img style = "width: 24px;">
+        </a>
+      </div>
+    </nav>
+</head>
+
+<body>
+  <div class="container">
+
+  </div>
+  <!-- Add Bootstrap and Popper.js JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script></body>
+</html>
